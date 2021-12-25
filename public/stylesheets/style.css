@@ -1,0 +1,12 @@
+body 
+    background-color:#F0F0F0;
+    padding: 2em;
+}
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+.form-title{
+    margin: 2em;
+    text-align: center;
+}

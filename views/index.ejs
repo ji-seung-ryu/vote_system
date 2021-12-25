@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <div>
+			
+            hi! <p id="address"></p> you have <%= vote_cnt %> vote(s)
+			    
+
+        </div>
+    </head>
+
+    <body>
+        <h1>
+            candinate
+        </h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>NUM</th>
+                    <th>NAME</th>
+					<th>VOTE_CNT</th>
+                    <th>VOTE</th>
+					
+                </tr>
+            </thead>
+            <tbody>
+                <% cand.forEach(function(person){ %>
+                <tr>
+                    <td><%= person.num %></td>
+                    <td><%= person.name %></td>
+					<td><%= person.voteCount %></td>
+                    <td>
+		
+						<button
+                                type="button"
+                                onClick="vote_function(this)"
+                                name="vote_btn"
+                                value="<%= person.num%>"
+								class= 'vote_btn'
+                            >
+                                vote
+                            </button>
+                    </td>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+		<button id ='connectButton'>
+			connect
+		</button>
+		<script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+        <script type="text/javascript" src="/front_js/front_vote.js"></script>
+        
+    </body>
+</html>
