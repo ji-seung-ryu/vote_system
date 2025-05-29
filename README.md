@@ -1,1 +1,18 @@
-uncompleted vote system with DAPP
+# 블록체인 투표 시스템 (Vote System)
+
+이 리포지토리는 Solidity로 작성된 **블록체인 기반 투표 시스템**입니다. 스마트 컨트랙트를 활용하여 **신뢰할 수 있고, 투명하며, 조작이 불가능한** 투표 과정을 구현합니다. [공식문서](https://docs.soliditylang.org/en/latest/solidity-by-example.html#voting) 를 참고하여 만들었습니다. 
+
+## 주요 기능
+
+- 의장(chairperson)이 유권자에게 투표 권한을 부여할 수 있음
+- 유권자는:
+  - 직접 투표하거나
+  - 다른 사람에게 투표권을 위임할 수 있음
+- 유권자의 가중치(weight)에 따라 투표 수가 계산됨
+- 가장 많은 표를 얻은 제안을 자동으로 계산해 반환
+
+---
+
+## 사전 준비 사항
+- Remix IDE: Solidity 스마트 컨트랙트를 작성하고 배포할 수 있는 웹 기반 개발 환경
+- MetaMask: 블록체인과 상호작용하기 위한 브라우저 확장 지갑
